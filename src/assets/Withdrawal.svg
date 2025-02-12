@@ -1,0 +1,15 @@
+<svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_690_92)">
+<path d="M5.1875 14.0625C3.46164 14.0625 2.0625 12.6634 2.0625 10.9375V4.6875C2.0625 2.96164 3.46164 1.5625 5.1875 1.5625H35.8125C37.5384 1.5625 38.9375 2.96164 38.9375 4.6875V10.9375C38.9375 12.6634 37.5384 14.0625 35.8125 14.0625" stroke="#FF640B" style="stroke:#FF640B;stroke:color(display-p3 1.0000 0.3922 0.0431);stroke-opacity:1;" stroke-width="3.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.3125 7.8125H32.6875" stroke="#FF640B" style="stroke:#FF640B;stroke:color(display-p3 1.0000 0.3922 0.0431);stroke-opacity:1;" stroke-width="3.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29.5625 7.8125V35.3125C29.5625 37.0384 28.1634 38.4375 26.4375 38.4375H14.5625C12.8366 38.4375 11.4375 37.0384 11.4375 35.3125V7.8125" stroke="#FF640B" style="stroke:#FF640B;stroke:color(display-p3 1.0000 0.3922 0.0431);stroke-opacity:1;" stroke-width="3.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.5 29.6875V32.8125" stroke="#FF640B" style="stroke:#FF640B;stroke:color(display-p3 1.0000 0.3922 0.0431);stroke-opacity:1;" stroke-width="3.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.5 10.9375V7.8125" stroke="#FF640B" style="stroke:#FF640B;stroke:color(display-p3 1.0000 0.3922 0.0431);stroke-opacity:1;" stroke-width="3.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.5 23.4375C22.2259 23.4375 23.625 22.0384 23.625 20.3125C23.625 18.5866 22.2259 17.1875 20.5 17.1875C18.7741 17.1875 17.375 18.5866 17.375 20.3125C17.375 22.0384 18.7741 23.4375 20.5 23.4375Z" stroke="#FFBA93" style="stroke:#FFBA93;stroke:color(display-p3 1.0000 0.7300 0.5750);stroke-opacity:1;" stroke-width="3.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_690_92">
+<rect width="40" height="40" fill="white" style="fill:white;fill-opacity:1;" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+</svg>
