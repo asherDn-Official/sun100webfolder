@@ -76,7 +76,7 @@ export const SubmitCard = ({
           disabled={submitted}
         >
           {submitted
-            ? "Details Submitted Not Verified"
+            ? "KYC documents review is in progress"
             : activeStep === steps.length
             ? "Submit For Verification"
             : "Next"}

@@ -30,7 +30,7 @@ export const ReferFriends = () => {
         </Mui.Stack>
         <Mui.Stack>
           <Mui.CardMedia
-            src={`${import.meta.env.BASE_URL}/images/referal.png`}
+            src={`${import.meta.env.BASE_URL}images/referal.png`}
             component="img"
             sx={{
               width: { xs: 100, md: 150 },

@@ -46,7 +46,7 @@ export const Asset = ({
             variant="contained"
             endIcon={
               <Mui.CardMedia
-                  src={`${import.meta.env.BASE_URL}/images/right-arrow.png`}
+                  src={`${import.meta.env.BASE_URL}images/right-arrow.png`}
                   component="img"
                   sx={{
                     width: 20,
@@ -68,19 +68,19 @@ export const Asset = ({
       gap={3}
     >
       <Components.Global.CoinCard
-          image={`${import.meta.env.BASE_URL}/images/bitcoin_F 1.png`}
+          image={`${import.meta.env.BASE_URL}images/bitcoin_F 1.png`}
           content="Bitcoin (BTC)"
           title="$47,651.46"
           percent='6%'
       />
       <Components.Global.CoinCard
-          image={`${import.meta.env.BASE_URL}/images/bitcoin_F 1 (1).png`}
+          image={`${import.meta.env.BASE_URL}images/bitcoin_F 1 (1).png`}
           content="Ethereum (ETH)"
           title="$3,449.46"
           percent='3.5%'
       />
       <Components.Global.CoinCard
-          image={`${import.meta.env.BASE_URL}/images/bitcoin_F 1 (2).png`}
+          image={`${import.meta.env.BASE_URL}images/bitcoin_F 1 (2).png`}
           content="Binance Coin"
           title="$47,651.46"
           percent='5.2%'

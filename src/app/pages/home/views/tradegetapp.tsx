@@ -47,7 +47,7 @@ export const TradeGetApp = () => (
             >
               <Mui.CardMedia
                 component="img"
-                src={`${import.meta.env.BASE_URL}/images/getapp.png`}
+                src={`${import.meta.env.BASE_URL}images/getapp.png`}
                 sx={{ width: { xs: "80%", md: "100%" }, objectFit: "inherit" }}
               />
             </Mui.Grid>

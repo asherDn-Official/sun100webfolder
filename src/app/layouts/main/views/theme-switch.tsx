@@ -30,7 +30,7 @@ export const ThemeSwitch = () => {
         {
           light: (
             <Mui.CardMedia
-              src={`${import.meta.env.BASE_URL}/images/LIGHTMODE.png`}
+              src={`${import.meta.env.BASE_URL}images/LIGHTMODE.png`}
               component="img"
               sx={{
                 width: 25,
@@ -40,7 +40,7 @@ export const ThemeSwitch = () => {
           ),
           dark: (
             <Mui.CardMedia
-              src={`${import.meta.env.BASE_URL}/images/DARKMODE.png`}
+              src={`${import.meta.env.BASE_URL}images/DARKMODE.png`}
               component="img"
               sx={{
                 width: 25,

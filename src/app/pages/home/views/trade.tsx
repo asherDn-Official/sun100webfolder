@@ -51,17 +51,17 @@ export const Trade = ({
       spacing={3}
     >
       <Components.Global.WhyusCard
-        image={`${import.meta.env.BASE_URL}/images/Uiversal transaction.png`}
+        image={`${import.meta.env.BASE_URL}images/Uiversal transaction.png`}
         title="Universal Access"
         content="Signup with Sun100 with Your Email"
       />
       <Components.Global.WhyusCard
-        image={`${import.meta.env.BASE_URL}/images/Secure storage.png`}
+        image={`${import.meta.env.BASE_URL}images/Secure storage.png`}
         title="Secure Storage"
         content="Deposit INR to your wallet through secure payment"
       />
       <Components.Global.WhyusCard
-        image={`${import.meta.env.BASE_URL}/images/Rapid transaction.png`}
+        image={`${import.meta.env.BASE_URL}images/Rapid transaction.png`}
         title="Rapid Transactions"
         content="Trade Crypto safely and effortlessly."
       />

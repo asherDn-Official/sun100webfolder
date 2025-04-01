@@ -14,7 +14,7 @@ export const Verified = () => (
     >
       <Mui.CardMedia
         component="img"
-        src={`${import.meta.env.BASE_URL}/images/2fverify.jpeg`}
+        src={`${import.meta.env.BASE_URL}images/2fverify.jpeg`}
         sx={{ height: "auto", width: 50 }}
       />
       <Mui.Typography variant="h5" textAlign="center" fontWeight={900}>

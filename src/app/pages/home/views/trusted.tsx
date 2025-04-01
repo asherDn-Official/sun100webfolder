@@ -97,7 +97,7 @@ export const Trusted = ({
                   to={`/account/login`}
                   endIcon={
                     <Mui.CardMedia
-                        src={`${import.meta.env.BASE_URL}/images/white-arrow.png`}
+                        src={`${import.meta.env.BASE_URL}images/white-arrow.png`}
                         component="img"
                         sx={{
                           width: 20,

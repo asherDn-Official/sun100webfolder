@@ -71,7 +71,7 @@ export const Explore = () => (
                 <Mui.Stack direction="row" gap={2} alignItems="center">
                   <Mui.CardMedia
                     component="img"
-                    src={`${import.meta.env.BASE_URL}/images/Non Stop.png`}
+                    src={`${import.meta.env.BASE_URL}images/Non Stop.png`}
                     sx={{
                       width: 40,
                       heigth: 40,
@@ -117,7 +117,7 @@ export const Explore = () => (
                 <Mui.Stack direction="row" gap={2} alignItems="center">
                   <Mui.CardMedia
                     component="img"
-                    src={`${import.meta.env.BASE_URL}/images/Non Stop.png`}
+                    src={`${import.meta.env.BASE_URL}images/Non Stop.png`}
                     sx={{
                       width: 40,
                       heigth: 40,
@@ -163,7 +163,7 @@ export const Explore = () => (
                 <Mui.Stack direction="row" gap={2} alignItems="center">
                   <Mui.CardMedia
                     component="img"
-                    src={`${import.meta.env.BASE_URL}/images/Non Stop.png`}
+                    src={`${import.meta.env.BASE_URL}images/Non Stop.png`}
                     sx={{
                       width: 40,
                       heigth: 40,

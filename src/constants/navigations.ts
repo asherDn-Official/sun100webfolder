@@ -1,6 +1,6 @@
 export const Navigations = [
   "Dashboard",
-  "Spot",
+  "Exchange",
   // "P2P",
   "Staking",
   // "NFT",

@@ -7,7 +7,6 @@ import * as Contexts from "src/app/contexts";
 import * as Components from "src/app/components";
 import * as Hooks from "src/app/hooks";
 import * as Pages from "src/app/pages";
-
 const setFocus = (name: string) => {
   const element = document.getElementById(name);
   if (element) {
@@ -15,34 +14,33 @@ const setFocus = (name: string) => {
     element.scrollIntoView({ block: "center" });
   }
 };
-
 export const Main = () => {
   const { user } = React.useContext(Contexts.UserContext);
   const { activeStep, loading, userKYC, validation, submitKyc, setActiveStep } =
     Hooks.User.useUserUpdate();
   const [stepShow, setStepShow] = React.useState(true);
-
   useEffect(() => {
     if (
       userKYC?.userKyc?.idProof_verified &&
       userKYC?.userKyc?.addressProof_verified
     ) {
-      setStepShow(false);
+      setStepShow(false); // Hide steps when KYC is fully verified
+    } else if (userKYC?.userKyc?.addressProofPhoto) {
+      setStepShow(false); // Hide steps if documents are uploaded and pending review
+    } else {
+      setStepShow(true); // Show steps if KYC hasn't started
     }
   }, [userKYC?.userKyc]);
-
   // const goBack = () => {
   //   if(activeStep >= 1) {
   //     setActiveStep(activeStep - 1)
   //   }
   // }
-
   // const goNext = () => {
   //   if(activeStep <= 2) {
   //     setActiveStep(activeStep + 1)
   //   }
   // }
-
   return loading ? (
     <Components.Global.GlobalLoader />
   ) : (
@@ -108,7 +106,7 @@ export const Main = () => {
             ) : null}
             {!stepShow && (
               <Mui.Grid item xs={12} container>
-                <Mui.Stack direction='row' alignItems='center' gap={2}>
+                <Mui.Stack direction="row" alignItems="center" gap={2}>
                   {/* <Mui.CardMedia
                     onClick={goBack}
                     component="img"
@@ -119,7 +117,12 @@ export const Main = () => {
                       cursor: 'pointer'
                     }}
                   /> */}
-                  <Mui.Typography variant="h5" fontSize={{xs: '18px', md: '24px' }} fontWeight={600} py={2}>
+                  <Mui.Typography
+                    variant="h5"
+                    fontSize={{ xs: "18px", md: "24px" }}
+                    fontWeight={600}
+                    py={2}
+                  >
                     KYC Registration
                   </Mui.Typography>
                 </Mui.Stack>
@@ -165,6 +168,10 @@ export const Main = () => {
                           bgcolor: "primary.main",
                           borderRadius: 2.5,
                           padding: 1.25,
+                          "&.Mui-disabled": {
+                            bgcolor: "orange",
+                            color: "white",
+                          },
                           "&:hover": {
                             bgcolor: "primary.main",
                             boxShadow: "none",
@@ -177,7 +184,7 @@ export const Main = () => {
                       >
                         {!Boolean(userKYC?.userKyc?.reason) &&
                         Boolean(userKYC?.userKyc?.addressProofPhoto)
-                          ? "Details Submitted Not Verified"
+                          ? "KYC documents review is in progress"
                           : activeStep === 2
                           ? "Submit"
                           : "Next"}
@@ -195,7 +202,6 @@ export const Main = () => {
     </Formik.Formik>
   );
 };
-
 const Content = ({
   userKYC,
   activeStep,
@@ -209,20 +215,18 @@ const Content = ({
       index ? null : setFocus(key);
     });
   }, [isSubmitting]);
-  console.log('====================================');
+  console.log("====================================");
   console.log(activeStep >= 2);
-  console.log('====================================');
-
+  console.log("====================================");
   return (
     <Mui.Grid item xs={12} md={12} container /* spacing={2} */>
       <Pages.Views.IntroJSConfig name="kyc" />
-
       {activeStep === 0 && (
         <>
           <Pages.User.Kyc.Views.ContactDetail
             disabled={Boolean(
-              (!Boolean(userKYC?.userKyc?.reason) &&
-                userKYC?.userKyc?.secondaryPhoneNumber) /* ||
+              !Boolean(userKYC?.userKyc?.reason) &&
+                userKYC?.userKyc?.secondaryPhoneNumber /* ||
                 activeStep >= 1 */
             )}
           />
@@ -232,8 +236,8 @@ const Content = ({
         <>
           <Pages.User.Kyc.Views.ResidentialAddress
             disabled={Boolean(
-              (!Boolean(userKYC?.userKyc?.reason) &&
-                userKYC?.userKyc?.addressProofPhoto) /* ||
+              !Boolean(userKYC?.userKyc?.reason) &&
+                userKYC?.userKyc?.addressProofPhoto /* ||
                 activeStep >= 2 */
             )}
           />
@@ -243,8 +247,8 @@ const Content = ({
         <>
           <Pages.User.Kyc.Views.DocumentDetail
             disabled={
-              (!Boolean(userKYC?.userKyc?.reason) &&
-                Boolean(userKYC?.userKyc?.documentPhotoBack)) /* ||
+              !Boolean(userKYC?.userKyc?.reason) &&
+              Boolean(userKYC?.userKyc?.documentPhotoBack) /* ||
               activeStep >= 3 */
             }
           />

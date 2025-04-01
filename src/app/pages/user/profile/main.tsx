@@ -80,12 +80,12 @@ export const Main = ({
       icon: <MuiIcon.AccountCircleOutlined sx={{ fontSize: "30px" }} />,
     },
 
-    {
-      id: 1,
-      active: false,
-      linkName: "Payment Details",
-      icon: <MuiIcon.WalletOutlined sx={{ fontSize: "30px" }} />,
-    },
+    // {
+    //   id: 1,
+    //   active: false,
+    //   linkName: "Payment Details",
+    //   icon: <MuiIcon.WalletOutlined sx={{ fontSize: "30px" }} />,
+    // },
 
     {
       id: 2,

@@ -37,6 +37,8 @@ export const useAuth = () => {
 
     await Api.Server.Request("login", values)
       .then((res) => {
+        sessionStorage.setItem(`email`, values.email);
+
         if (res?.error) {
           // Handle error cases based on the message
           if (

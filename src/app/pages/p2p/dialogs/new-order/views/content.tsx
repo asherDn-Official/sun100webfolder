@@ -328,7 +328,7 @@ export const Content = ({
               <Mui.ListItemIcon>
                 <Mui.CardMedia
                   component="img"
-                  src={`${import.meta.env.BASE_URL}/images/allpayments.jpeg`}
+                  src={`${import.meta.env.BASE_URL}images/allpayments.jpeg`}
                   sx={{ height: 25, width: 25 }}
                 />
               </Mui.ListItemIcon>

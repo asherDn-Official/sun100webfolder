@@ -289,7 +289,7 @@ export const SpotTable = ({
                   to={
                     !Boolean(user?.email)
                       ? `${Constants.API_CONFIG.base}account/login`
-                      : `spot/${coin.coin}_${coin.currency}`
+                      : `exchange/${coin.coin}_${coin.currency}`
                   }
                 >
                   Trade

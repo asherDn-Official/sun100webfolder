@@ -27,7 +27,7 @@ export default () => {
             height: { xs: "400px", sm: '500px', md: "700px" },
             position: "relative",
             overflow: "hidden",
-            backgroundImage: `url('${import.meta.env.BASE_URL}/images/newbanner.png')`,
+            backgroundImage: `url('${import.meta.env.BASE_URL}images/newbanner.png')`,
             backgroundRepeat: "no-repeat",
             backgroundSize: {xs: 'inherit', md: "cover"},
             backgroundPosition: {xs: 'left', md: "cover"},

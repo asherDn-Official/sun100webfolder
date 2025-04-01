@@ -9,7 +9,7 @@ export const Invest = () => (
       // height: { xs: "fit-content", md: "135vh" },
       position: "relative",
       overflow: "hidden",
-      backgroundImage: `url('${import.meta.env.BASE_URL}/images/kickstart.png')`,
+      backgroundImage: `url('${import.meta.env.BASE_URL}images/kickstart.png')`,
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       backgroundPosition: "contain",
@@ -61,7 +61,7 @@ export const Invest = () => (
       >
         <Mui.Stack sx={{ width: { xs: "100%", md: "33.33%" } }}>
           <Components.Global.KickStartCard
-            image={`${import.meta.env.BASE_URL}/images/Sign-up-verify.png`}
+            image={`${import.meta.env.BASE_URL}images/Sign-up-verify.png`}
             title="Sign Up and Verify in 10 minutes"
             content="Sign Up with Sun100 with your email id."
             step="1"
@@ -69,7 +69,7 @@ export const Invest = () => (
         </Mui.Stack>
         <Mui.Stack sx={{ width: { xs: "100%", md: "33.33%" } }}>
           <Components.Global.KickStartCard
-            image={`${import.meta.env.BASE_URL}/images/transfer-money-wallet.png`}
+            image={`${import.meta.env.BASE_URL}images/transfer-money-wallet.png`}
             title="Transfer Money to Wallet"
             content="Deposit INR to your wallet through secure payment gateways."
             step="2"
@@ -77,7 +77,7 @@ export const Invest = () => (
         </Mui.Stack>
         <Mui.Stack sx={{ width: { xs: "100%", md: "33.33%" } }}>
           <Components.Global.KickStartCard
-            image={`${import.meta.env.BASE_URL}/images/buy-sell-crypto.png`}
+            image={`${import.meta.env.BASE_URL}images/buy-sell-crypto.png`}
             title="Buy/Sell Crypto"
             content="Trade Crypto safely and effortlessly."
             step="3"

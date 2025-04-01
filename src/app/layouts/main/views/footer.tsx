@@ -8,7 +8,7 @@ import * as Hooks from "src/app/hooks";
 
 export const Footer = ({ auth }: { auth: boolean }) => {
   const check = Hooks.Design.useRouteCheck([
-    `${Constants.API_CONFIG.base}spot/:coinId`,
+    `${Constants.API_CONFIG.base}exchange/:coinId`,
   ]);
 
   const pathname = Router.useLocation();

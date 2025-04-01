@@ -85,7 +85,7 @@ export const Main = () => {
             ],
           },
           {
-            path: "spot/*",
+            path: "exchange/*",
             element: (
               <Routes.Private protect>
                 <SpotRoute />

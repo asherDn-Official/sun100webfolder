@@ -21,11 +21,13 @@ export const Logout = ({
 
   const handleLogoutAll = async () => {
     await Api.Server.Request("logoutAll", { allDevice: true }).then((res)=> {
+      console.log("Logout API Response:", res);
       if(!res.error) {
         localStorage.removeItem("accessToken");
+        update();
       }
     });
-    update();
+   
   }; 
 
   return (

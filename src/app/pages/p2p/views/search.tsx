@@ -100,7 +100,7 @@ export const SearchBox = ({
               <Mui.MenuItem value="0">
                 <Mui.ListItemIcon>
                   <Mui.Avatar
-                    src={`${import.meta.env.BASE_URL}/images/allpayments.jpeg`}
+                    src={`${import.meta.env.BASE_URL}images/allpayments.jpeg`}
                     sx={{ height: 25, width: 25 }}
                   />
                 </Mui.ListItemIcon>

@@ -28,7 +28,7 @@ export const TableCard = ({
   const handleWithdraw = (coin: Hooks.User.coinsWallet) =>
     navigate("withdraw", { state: coin });
   const handleTrade = (coin: Hooks.User.coinsWallet) =>
-    navigate(`${Constants.API_CONFIG.base}spot/${coin.id}`, { state: coin });
+    navigate(`${Constants.API_CONFIG.base}exchange/${coin.id}`, { state: coin });
 
   const data = coinWalletDetails?.length
     ? coinWalletDetails
@@ -53,7 +53,9 @@ export const TableCard = ({
                 component="img"
                 src={`${import.meta.env.VITE_API_ENCRYPTION}://${
                   import.meta.env.VITE_API_IP
-                }${import.meta.env.VITE_API_PATH}${coin.coinLogo}`}
+                }${`${import.meta.env.VITE_API_PATH}${
+                  coin.coinLogo
+                }`.replaceAll("//", "/")}`}
                 sx={{ width: 50, borderRadius: 20 }}
               />
               <Mui.Stack>

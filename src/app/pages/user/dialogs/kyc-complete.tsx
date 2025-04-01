@@ -8,15 +8,15 @@ export const KycComplete = () => (
     <Mui.Stack component={Mui.DialogContent} spacing={3} alignItems="center">
       <Mui.CardMedia
         component="img"
-        src={`${import.meta.env.BASE_URL}/images/Successmark.png`}
+        src={`${import.meta.env.BASE_URL}images/Successmark.png`}
         sx={{ height: 150, width: 150 }}
       />
       <Mui.Typography variant="h5" textAlign="center">
         KYC Submission Completed
       </Mui.Typography>
       <Mui.Typography variant="body2" color="text.secondary" textAlign="center">
-        Thanks for submitting your document we’ll verify it and complete your
-        KYC as soon as possible
+        Thanks for submitting your document. We’ll verify it and complete your
+        KYC as soon as possible.
       </Mui.Typography>
       <Mui.Button
         variant="contained"
@@ -24,7 +24,7 @@ export const KycComplete = () => (
         component={Router.Link}
         to="/profile/kyc"
       >
-        Back to Kyc
+        Back to KYC
       </Mui.Button>
     </Mui.Stack>
   </Component.Global.Dialog>

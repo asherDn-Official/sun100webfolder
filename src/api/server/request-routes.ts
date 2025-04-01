@@ -136,6 +136,9 @@ export const Routes: {
 
   login: { url: "/user/login", method: "post" },
 
+  logoutAll: { url: "/user/logout", method: "post" },
+
+
   resetUserEmail: { url: "/user/resetPasswordMail", method: "post" },
 
   resendVerificationEmail: {

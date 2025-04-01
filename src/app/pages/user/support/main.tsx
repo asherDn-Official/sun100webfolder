@@ -44,7 +44,7 @@ export const Main = () => {
           </Mui.Stack>
           <Mui.Stack>
             <Mui.CardMedia
-              src={`${import.meta.env.BASE_URL}/images/helpcenter.png`}
+              src={`${import.meta.env.BASE_URL}images/helpcenter.png`}
               component="img"
               sx={{
                 width: { xs: 100, md: 150 },

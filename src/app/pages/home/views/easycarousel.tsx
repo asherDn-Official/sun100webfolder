@@ -8,7 +8,7 @@ export const EasyCarousel = () => (
       height: { xs: "420px", md: "600px" },
       position: "relative",
       overflow: "hidden",
-      backgroundImage: `url('${import.meta.env.BASE_URL}/images/carouselbg.png')`,
+      backgroundImage: `url('${import.meta.env.BASE_URL}images/carouselbg.png')`,
       backgroundRepeat: "no-repeat",
       backgroundSize: {xs: 'inherit' ,md: "cover"},
       backgroundPosition: "bottom",

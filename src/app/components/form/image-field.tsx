@@ -107,9 +107,11 @@ export const ImageField = ({
                   ? values[name].includes("base64")
                     ? values[name]
                     : `${import.meta.env.VITE_API_ENCRYPTION}://${
-                      import.meta.env.VITE_API_IP
-                    }${import.meta.env.VITE_API_PATH}${values[name]}#toolbar=0`
-                  : /* Assets.KycAddPhoto */ "images/upload.png"
+                        import.meta.env.VITE_API_IP
+                      }${import.meta.env.VITE_API_PATH}${
+                        values[name]
+                      }#toolbar=0`
+                  : `${import.meta.env.BASE_URL}images/upload.png`
               }
               sx={{
                 borderRadius: 1,

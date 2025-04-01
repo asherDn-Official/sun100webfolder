@@ -12,8 +12,8 @@ export const NavigateLogo = ({
   }) => (
   <Mui.CardActionArea
     disableRipple
-    // component={Router.Link}
-    // to={`${Constants.API_CONFIG.base}dashboard`}
+    component={Router.Link}
+    to={`${Constants.API_CONFIG.mainAppURL}`}
     sx={{ zIndex: 2, width: "fit-content", p: 1, borderRadius: 1 }}
   >
     <Mui.CardMedia
@@ -21,7 +21,7 @@ export const NavigateLogo = ({
       autoPlay
       loop
       src={image}
-      sx={{...sx}}
+      sx={{ ...sx }}
       // sx={{ height: 55, width: 120, ...sx }}
     />
   </Mui.CardActionArea>

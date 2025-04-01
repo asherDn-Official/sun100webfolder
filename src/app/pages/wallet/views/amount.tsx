@@ -103,7 +103,7 @@ export const AmountBox = ({
             sx={{ border: 1, borderColor: "primary.light" }}
           >
             <Mui.CardMedia
-              src="images/wallet.png"
+              src={`${import.meta.env.BASE_URL}images/wallet.png`}
               component="img"
               sx={{
                 width: 30,
@@ -139,7 +139,7 @@ export const AmountBox = ({
             sx={{ border: 1, borderColor: "primary.light" }}
           >
             <Mui.CardMedia
-              src="images/walletusd.png"
+              src={`${import.meta.env.BASE_URL}images/walletusd.png`}
               component="img"
               sx={{
                 width: 30,

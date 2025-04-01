@@ -5,6 +5,7 @@ import * as Constants from "src/constants";
 import * as Contexts from "src/app/contexts";
 import * as Components from "src/app/components";
 import * as Pages from "src/app/pages";
+import {RecentTransaction}  from "../dashboard/views/recent-transactions";
 
 export const Main = () => {
   const {
@@ -50,6 +51,17 @@ export const Main = () => {
             nfts={nfts}
           />
         </Mui.Grid>
+      </Mui.Grid>
+      
+      <Mui.Grid item spacing={2} sx={{ mt: 3 }}>
+      
+      {/* <RecentTransaction transactions={[]}> 
+
+        </RecentTransaction> */}
+        
+        <Pages.Dashboard.Views.RecentTransaction
+            transactions={[]}
+          />
       </Mui.Grid>
       <Router.Outlet />
     </Mui.Container>
