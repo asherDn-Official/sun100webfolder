@@ -1,0 +1,1 @@
+import{b8 as t}from"./index-7c4d6238.js";const a=i=>{var o,r;const{data:e,isFetching:s}=t(["userKYC",i],"getKYC");return{userKYC:e,loading:s,verified:!!((o=e==null?void 0:e.userKyc)!=null&&o.idProof_verified&&((r=e==null?void 0:e.userKyc)!=null&&r.addressProof_verified))}};export{a as u};

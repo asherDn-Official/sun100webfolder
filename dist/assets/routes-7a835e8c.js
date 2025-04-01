@@ -1,0 +1,1 @@
+import{a5 as s,j as e}from"./index-7c4d6238.js";import{M as t,V as a}from"./main-41c63920.js";import"./auth-e4923acc.js";const m=()=>s([{path:"/*",element:e.jsx(t,{}),children:[{path:"success",element:e.jsx(a,{})}]}]);export{m as default};

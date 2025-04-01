@@ -1,0 +1,1 @@
+import{R as e,j as o}from"./index-4567d11c.js";const a=({name:t})=>(e.useMemo(()=>+(localStorage.getItem(`${t}StepsIndex`)||""),[localStorage.getItem(`${t}StepsIndex`)]),e.useMemo(()=>!localStorage.getItem(`${t}Steps`),[localStorage.getItem(`${t}Steps`)]),e.useMemo(()=>!localStorage.getItem(`${t}Hints`),[localStorage.getItem(`${t}Hints`)]),o.jsx(o.Fragment,{}));export{a as I};
